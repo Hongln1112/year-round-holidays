@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Toddler Halloween Guide: Age-by-Age Safety, Activities & Costume Ideas</title>
+<meta name="description" content="Everything parents need for a safe, fun toddler Halloween: when to start trick-or-treating, age-by-age guidance, at-home activities, safe costume tips, and non-candy alternatives.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%83%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --cream:#FFF8F0;
+    --orange:#E8632B;
+    --orange-light:#FFF0E6;
+    --purple:#5B3A8C;
+    --purple-light:#F0EAF8;
+    --ink:#2D2A26;
+    --muted:#7A6E62;
+    --line:#EADFD3;
+    --card:#FFFFFF;
+    --radius:18px;
+    --shadow:0 6px 24px rgba(45,42,38,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:var(--cream);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px;}
+
+  /* Hero */
+  .hero{position:relative;height:60vh;min-height:420px;overflow:hidden;border-radius:0 0 28px 28px;}
+  .hero img{width:100%;height:100%;object-fit:cover;}
+  .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(45,42,38,.75) 0%,rgba(45,42,38,.2) 50%,rgba(45,42,38,.1) 100%);}
+  .hero-text{position:absolute;bottom:0;left:0;right:0;padding:40px 32px;z-index:2;}
+  .hero-text .tag{display:inline-block;background:var(--orange);color:#fff;font-size:12px;font-weight:600;padding:5px 12px;border-radius:20px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px;}
+  .hero-text h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,5.5vw,48px);font-weight:800;color:#fff;line-height:1.15;letter-spacing:-.5px;max-width:640px;}
+  .hero-text .sub{color:rgba(255,255,255,.85);font-size:16px;margin-top:12px;max-width:560px;}
+
+  /* Intro */
+  .intro{padding:40px 0 10px;}
+  .intro p{font-size:17px;color:#4a4440;line-height:1.8;}
+  .intro p+p{margin-top:14px;}
+
+  /* Section */
+  section{padding:36px 0;}
+  .sec-label{font-size:12px;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px;}
+  h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(24px,3.5vw,32px);font-weight:700;letter-spacing:-.3px;line-height:1.25;margin-bottom:18px;}
+  .lead{font-size:16px;color:var(--muted);margin-bottom:24px;max-width:640px;}
+
+  /* Age cards */
+  .age-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px;}
+  .age-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;box-shadow:var(--shadow);}
+  .age-card .age{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--purple);margin-bottom:6px;}
+  .age-card .verdict{display:inline-block;font-size:12px;font-weight:600;padding:4px 10px;border-radius:12px;margin-bottom:12px;}
+  .age-card .verdict.go{background:var(--purple-light);color:var(--purple);}
+  .age-card .verdict.caution{background:#FFF4E0;color:#B8741A;}
+  .age-card .verdict.wait{background:#FDECEC;color:#C0392B;}
+  .age-card ul{list-style:none;padding:0;}
+  .age-card li{font-size:14px;color:#4a4440;padding:5px 0;padding-left:20px;position:relative;}
+  .age-card li::before{content:'•';position:absolute;left:4px;color:var(--orange);font-weight:700;}
+
+  /* Safety checklist */
+  .safety-box{background:var(--purple-light);border-radius:var(--radius);padding:28px 26px;margin-top:20px;}
+  .safety-box h3{font-size:18px;font-weight:700;margin-bottom:16px;color:var(--purple);}
+  .checklist{list-style:none;padding:0;}
+  .checklist li{padding:10px 0;padding-left:32px;position:relative;font-size:15px;color:#3d3833;border-bottom:1px solid rgba(91,58,140,.1);}
+  .checklist li:last-child{border-bottom:none;}
+  .checklist li::before{content:'✓';position:absolute;left:0;top:10px;width:22px;height:22px;background:var(--purple);color:#fff;border-radius:50%;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+
+  /* Activity cards */
+  .act-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:20px;}
+  .act-card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);}
+  .act-card img{width:100%;height:220px;object-fit:cover;}
+  .act-card .body{padding:22px 24px;}
+  .act-card h3{font-size:19px;font-weight:700;margin-bottom:8px;}
+  .act-card p{font-size:14.5px;color:#4a4440;line-height:1.7;}
+  .act-card .tip{margin-top:12px;padding:10px 14px;background:var(--orange-light);border-radius:10px;font-size:13px;color:#9a4a1a;}
+
+  /* Non-candy */
+  .noncandy{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:20px;}
+  .nc-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center;}
+  .nc-item .emoji{font-size:32px;margin-bottom:8px;}
+  .nc-item .name{font-size:14px;font-weight:600;}
+
+  /* Costume tips */
+  .costume-img{display:block;width:100%;max-width:100%;height:420px;object-fit:cover;margin:20px auto;border-radius:var(--radius);box-shadow:var(--shadow);}
+  .costume-tips{list-style:none;padding:0;margin-top:12px;}
+  .costume-tips li{padding:10px 0;padding-left:28px;position:relative;font-size:15px;color:#3d3833;border-bottom:1px solid var(--line);}
+  .costume-tips li:last-child{border-bottom:none;}
+  .costume-tips li::before{content:'→';position:absolute;left:0;color:var(--orange);font-weight:700;}
+
+  /* FAQ */
+  .faq{margin-top:20px;}
+  .faq-item{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden;}
+  .faq-q{padding:18px 22px;font-weight:600;font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+  .faq-q .arrow{transition:transform .2s;color:var(--muted);}
+  .faq-item.open .arrow{transform:rotate(180deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-a-inner{padding:0 22px 18px;font-size:14.5px;color:#4a4440;line-height:1.7;}
+
+  /* Footer */
+  footer{margin-top:60px;padding:32px 0;text-align:center;border-top:1px solid var(--line);}
+  footer p{font-size:13px;color:var(--muted);}
+  .disclaimer{font-size:12px;color:#a89c90;margin-top:12px;line-height:1.6;}
+  .back-home{display:inline-block;margin-top:20px;color:var(--orange);text-decoration:none;font-size:14px;font-weight:500;}
+  .related{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);}
+  .related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;margin-bottom:14px;}
+  .related-links{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .related-links a{color:var(--orange);text-decoration:none;font-weight:600;font-size:14px;}
+  .related-links a:hover{text-decoration:underline;}
+
+  @media (max-width:600px){
+    .hero{height:50vh;min-height:340px;}
+    .hero-text{padding:24px 20px;}
+    .wrap{padding:0 16px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="assets/hero.jpg" alt="Toddler in pumpkin costume painting a small pumpkin at home">
+  <div class="hero-text">
+    <span class="tag">Toddler Guide · Ages 1–4</span>
+    <h1>The Complete Toddler Halloween Guide</h1>
+    <p class="sub">Age-by-age safety, at-home activities, and costume tips — so you and your little one can enjoy the holiday stress-free.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="intro">
+    <p>Halloween with a toddler is equal parts adorable and stressful. Will they be scared of costumes? Is it safe to take them door-to-door? What if they put candy in their mouth before you check it? You're not alone — every parent of a young child asks these questions.</p>
+    <p>This guide breaks it down by age, so you know exactly what to expect, what to skip, and how to make October 31st fun without the meltdowns.</p>
+  </div>
+
+  <section>
+    <div class="sec-label">Part 1</div>
+    <h2>What Age Can Kids Start Trick-or-Treating?</h2>
+    <p class="lead">There's no hard rule, but pediatricians and experienced parents agree on rough age ranges.</p>
+    <div class="age-grid">
+      <div class="age-card">
+        <div class="age">1–2 Years</div>
+        <span class="verdict caution">Skip the doors</span>
+        <ul>
+          <li>Too young for trick-or-treating — costumes feel weird, masks frighten them.</li>
+          <li>They won't remember it anyway. Focus on at-home fun.</li>
+          <li>Dress up for family photos, visit a pumpkin patch, or a Halloween-themed playgroup.</li>
+          <li>Hard candy is a major choking hazard at this age — skip it entirely.</li>
+        </ul>
+      </div>
+      <div class="age-card">
+        <div class="age">3–4 Years</div>
+        <span class="verdict go">Go slow, stay close</span>
+        <ul>
+          <li>Perfect age to try trick-or-treating, but limit it to 5–10 minutes.</li>
+          <li>Go with them the whole time — hold hands near streets.</li>
+          <li>Stick to familiar neighbors or a decorated, well-lit street.</li>
+          <li>Practice at home first: knock on doors, say "trick or treat," and thank people.</li>
+        </ul>
+      </div>
+      <div class="age-card">
+        <div class="age">5+ Years</div>
+        <span class="verdict go">More independence</span>
+        <ul>
+          <li>Can go in a small group with other kids, but an adult should be nearby.</li>
+          <li>Set a route together in advance — agree on which streets and a curfew.</li>
+          <li>Remind them never to cross the street without checking, even with candy in hand.</li>
+          <li>They can carry their own bag, but inspect treats together at home.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label">Part 2</div>
+    <h2>Safety Checklist You'll Actually Use</h2>
+    <p class="lead">Based on guidance from the CDC and American Academy of Pediatrics (AAP).</p>
+    <div class="safety-box">
+      <h3>Before you go out</h3>
+      <ul class="checklist">
+        <li><strong>Inspect every treat before they eat it.</strong> Only give factory-wrapped candy. Discard anything homemade unless you know who made it.</li>
+        <li><strong>Skip choking hazards.</strong> Hard candies, gum, and small toys are unsafe for kids under 4. Set them aside immediately.</li>
+        <li><strong>Make them visible.</strong> Use bright or light-colored costumes, reflective tape, glow sticks, or flashlights. Drivers have a hard time seeing small children at dusk.</li>
+        <li><strong>Skip masks under age 3.</strong> Masks block peripheral vision and breathing. Non-toxic face paint or a simple hat is safer.</li>
+        <li><strong>Use battery candles.</strong> Real flame in jack-o'-lanterns is a fire risk. LED tea lights look the same and are safe.</li>
+        <li><strong>Plan the route.</strong> Stay on well-lit streets with sidewalks. Avoid busy roads. Agree on a curfew and a meeting point.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label">Part 3</div>
+    <h2>Halloween at Home (No Trick-or-Treating Required)</h2>
+    <p class="lead">If your toddler is too young, too shy, or you just don't want to go door-to-door, these activities are just as fun.</p>
+    <div class="act-grid">
+      <div class="act-card">
+        <img src="assets/sensory.jpg" alt="Toddler Halloween sensory bin with black beans, mini pumpkins and plastic figures">
+        <div class="body">
+          <h3>1. Halloween Sensory Bin</h3>
+          <p>Fill a plastic tub with black beans, small pumpkins, plastic bats, ghost figurines, and plastic spiders. Let them scoop, pour, and sort. It's a great way to practice fine motor skills — and it keeps them busy for 30+ minutes.</p>
+          <div class="tip">Safety tip: Always supervise. For kids under 12 months, skip small items entirely.</div>
+        </div>
+      </div>
+      <div class="act-card">
+        <div class="body">
+          <h3>2. No-Carve Pumpkin Decorating</h3>
+          <p>Skip the knives. Let toddlers paint small pumpkins with non-toxic washable paint, stick on googly eyes, or use stickers. It's mess-free (well, mostly) and lets them feel like they're creating something spooky.</p>
+        </div>
+      </div>
+      <div class="act-card">
+        <div class="body">
+          <h3>3. Glow Stick Dance Party</h3>
+          <p>Turn off the lights, hand out glow sticks, and put on kid-friendly Halloween music. Toddlers love dancing in the dark — and it wears them out before bedtime. Pair it with popcorn or apple slices.</p>
+        </div>
+      </div>
+      <div class="act-card">
+        <div class="body">
+          <h3>4. Halloween Storytime</h3>
+          <p>Snuggle up with gentle Halloween books like <em>Room on the Broom</em>, <em>The Spooky Wheels on the Bus</em>, or <em>Five Little Pumpkins</em>. It's low-key, cozy, and perfect for kids who get overstimulated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label">Part 4</div>
+    <h2>Non-Candy Treats for Kids with Allergies</h2>
+    <p class="lead">If your child has food allergies — or you just want to skip the sugar — hand out these at home, or keep a stash of your own.</p>
+    <div class="noncandy">
+      <div class="nc-item"><div class="emoji">✨</div><div class="name">Glow sticks &amp; bracelets</div></div>
+      <div class="nc-item"><div class="emoji">🧩</div><div class="name">Stickers (Halloween-themed)</div></div>
+      <div class="nc-item"><div class="emoji">🎨</div><div class="name">Crayons or mini coloring books</div></div>
+      <div class="nc-item"><div class="emoji">🫧</div><div class="name">Bubble bottles</div></div>
+      <div class="nc-item"><div class="emoji">👻</div><div class="name">Plastic rings or temporary tattoos</div></div>
+      <div class="nc-item"><div class="emoji">🎈</div><div class="name">Mini pumpkins or stickers</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label">Part 5</div>
+    <h2>Choosing a Safe Toddler Costume</h2>
+    <p class="lead">Cute is important, but safe matters more. Here's what to look for.</p>
+    <img src="assets/costumes.jpg" class="costume-img" alt="Two toddlers in safe, bright Halloween costumes holding glow sticks on a sidewalk at dusk">
+    <ul class="costume-tips">
+      <li><strong>Bright or light colors</strong> — dark costumes are invisible to drivers at dusk. Add reflective tape or glow sticks.</li>
+      <li><strong>Fit well, no trailing fabric</strong> — long capes, oversized shoes, and loose hems are tripping hazards.</li>
+      <li><strong>Flame-retardant materials</strong> — keep costumes away from jack-o'-lantern candles and fireplace.</li>
+      <li><strong>Skip masks</strong> for kids under 3 — use face paint or a simple hat instead.</li>
+      <li><strong>Comfortable shoes</strong> — they'll be walking more than usual. Skip new costumes with stiff, scratchy fabric.</li>
+      <li><strong>Test it beforehand</strong> — put the costume on at home for 30 minutes. If they hate the sensation, they'll have a meltdown on October 31st.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-label">Part 6</div>
+    <h2>Common Toddler Halloween Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">What if my toddler is scared of costumes or masks?<span class="arrow">▾</span></div>
+        <div class="faq-a"><div class="faq-a-inner">That's completely normal. Many kids under 3 find masks and strange outfits frightening. Skip the costume this year — dress them in a simple themed shirt, or just celebrate at home with activities. There's no rule that says they have to wear a costume.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Should I take my baby trick-or-treating?<span class="arrow">▾</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Babies under 2 don't need to go door-to-door. You can dress them up for photos, take them to a decorated pumpkin patch, or bring them along to a neighbor's house they know. But they won't remember it — your energy is better spent on at-home activities.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What time should we go trick-or-treating?<span class="arrow">▾</span></div>
+        <div class="faq-a"><div class="faq-a-inner">For toddlers, aim for early — 5:30 to 6:30 PM. The streets are still lit, fewer people are out, and you can be home before bedtime. Most neighborhoods in the US see the most traffic between 6 and 8 PM, which is also when it's darkest and busiest.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How much candy is too much?<span class="arrow">▾</span></div>
+        <div class="faq-a"><div class="faq-a-inner">There's no right answer, but many parents use the "pumpkin swap" — after a few pieces on Halloween night, the rest goes to a "pumpkin fairy" who trades it for a small toy. This avoids sugar meltdowns and hidden stashes.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">My child has food allergies. What should I do?<span class="arrow">▾</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Look for homes participating in the Teal Pumpkin Project — they place a teal pumpkin on their porch and hand out non-food treats. Always inspect treats together, and consider bringing your own safe snacks for your child.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="related">
+    <h3>Keep Exploring</h3>
+    <div class="related-links">
+      <a href="fourth-of-july.html">← Fourth of July</a>
+      <a href="thanksgiving.html">Thanksgiving Guide →</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-home">← All holidays</a>
+
+  <footer>
+    <p>Made for parents, by parents. Happy Halloween!</p>
+    <p class="disclaimer">This guide is for general informational purposes and does not replace professional medical advice. Always follow your pediatrician's guidance, especially for children with allergies or special needs. Safety recommendations are based on CDC and AAP guidance current as of 2026.</p>
+  </footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click',function(){
+      var item=q.parentElement;
+      var a=item.querySelector('.faq-a');
+      var open=item.classList.contains('open');
+      if(open){a.style.maxHeight=0;item.classList.remove('open');}
+      else{a.style.maxHeight=a.scrollHeight+'px';item.classList.add('open');}
+    });
+  });
+</script>
+</body>
+</html>

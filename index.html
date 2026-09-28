@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Year-Round Holidays: Family Celebration Guides for Every Holiday</title>
+<meta name="description" content="Your complete guide to celebrating every holiday as a family. Halloween, Thanksgiving, Christmas, Valentine's Day, Fourth of July and more — age-by-age tips, activities, and safety advice.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%89%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --cream:#FFF8F0;--ink:#2D2A26;--muted:#7A6E62;--line:#EADFD3;--card:#FFFFFF;
+    --radius:18px;--shadow:0 6px 24px rgba(45,42,38,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px;}
+
+  /* Hero */
+  .hero{position:relative;height:52vh;min-height:380px;overflow:hidden;border-radius:0 0 28px 28px;margin-bottom:40px;}
+  .hero img{width:100%;height:100%;object-fit:cover;}
+  .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(45,42,38,.7) 0%,rgba(45,42,38,.15) 55%,rgba(45,42,38,.05) 100%);}
+  .hero-text{position:absolute;bottom:0;left:0;right:0;padding:40px 32px;z-index:2;max-width:960px;margin:0 auto;}
+  .hero-text .eyebrow{font-size:12px;font-weight:600;color:#FFD4B8;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;}
+  .hero-text h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(32px,5.5vw,52px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:14px;}
+  .hero-text h1 em{font-style:italic;color:#FFB088;}
+  .hero-text p{color:rgba(255,255,255,.88);font-size:16px;max-width:540px;line-height:1.7;}
+
+  /* Intro strip */
+  .intro-strip{text-align:center;padding:20px 0 10px;}
+  .intro-strip h2{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;margin-bottom:10px;}
+  .intro-strip p{font-size:15px;color:var(--muted);max-width:580px;margin:0 auto;}
+
+  /* Season sections */
+  .season{margin-top:40px;}
+  .season-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;display:flex;align-items:center;gap:12px;}
+  .season-label::after{content:'';flex:1;height:1px;background:var(--line);}
+  .season.fall .season-label{color:#C0551E;}
+  .season.winter .season-label{color:#2D7A4F;}
+  .season.spring .season-label{color:#C75B8A;}
+  .season.summer .season-label{color:#1a5276;}
+
+  /* Grid */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
+  .holiday-card{
+    background:var(--card);border-radius:var(--radius);padding:0;
+    box-shadow:var(--shadow);text-decoration:none;color:var(--ink);
+    transition:transform .2s,box-shadow .2s;display:block;overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .holiday-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(45,42,38,.13);}
+  .holiday-card .card-img{height:140px;overflow:hidden;}
+  .holiday-card .card-img img{width:100%;height:100%;object-fit:cover;}
+  .holiday-card .card-body{padding:20px 22px 24px;}
+  .holiday-card .month{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+  .holiday-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:6px;}
+  .holiday-card p{font-size:13.5px;color:var(--muted);line-height:1.6;}
+
+  /* Card color themes */
+  .c-halloween .month{color:#E8632B;}
+  .c-thanksgiving .month{color:#B8741A;}
+  .c-christmas .month{color:#2D7A4F;}
+  .c-nye .month{color:#5B3A8C;}
+  .c-superbowl .month{color:#1a5276;}
+  .c-valentine .month{color:#C0392B;}
+  .c-stpat .month{color:#2D7A4F;}
+  .c-easter .month{color:#8B7EC8;}
+  .c-mothers .month{color:#C75B8A;}
+  .c-memorial .month{color:#B03A2E;}
+  .c-fathers .month{color:#2C3E6B;}
+  .c-july4 .month{color:#B03A2E;}
+  .c-laborday .month{color:#1a5276;}
+
+  /* CTA */
+  .cta{text-align:center;padding:50px 0 20px;}
+  .cta h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;margin-bottom:10px;}
+  .cta p{font-size:15px;color:var(--muted);max-width:480px;margin:0 auto;}
+
+  /* Footer */
+  footer{padding:40px 0;text-align:center;border-top:1px solid var(--line);margin-top:40px;}
+  footer p{font-size:13px;color:var(--muted);}
+  footer a{color:var(--muted);text-decoration:none;}
+  footer a:hover{color:#E8632B;}
+
+  @media (max-width:600px){
+    .hero{height:42vh;min-height:300px;}
+    .hero-text{padding:24px 20px;}
+    .grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <img src="assets/home-hero.jpg" alt="Warm family home living room decorated for holidays with string lights and festive decor">
+  <div class="hero-text">
+    <div class="eyebrow">Family Celebration Guides</div>
+    <h1>Every Holiday,<br><em>Perfectly Celebrated</em></h1>
+    <p>Age-by-age tips, safety advice, at-home activities, and simple ideas — no stress, no overspending.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="intro-strip">
+    <h2>Pick a holiday, start planning</h2>
+    <p>Every holiday, one place. Whether you're prepping for trick-or-treat or hosting the in-laws, we've got the practical guide that actually works.</p>
+  </div>
+
+  <!-- FALL -->
+  <div class="season fall">
+    <div class="season-label">Fall · Sep–Nov</div>
+    <div class="grid">
+      <a href="halloween.html" class="holiday-card c-halloween">
+        <div class="card-img"><img src="assets/hero.jpg" alt="Toddler in pumpkin costume"></div>
+        <div class="card-body">
+          <div class="month">October 31</div>
+          <h3>Halloween</h3>
+          <p>Toddler costume safety, trick-or-treating by age, at-home activities, and non-candy alternatives.</p>
+        </div>
+      </a>
+      <a href="thanksgiving.html" class="holiday-card c-thanksgiving">
+        <div class="card-img"><img src="assets/thanksgiving.jpg" alt="Family Thanksgiving dinner"></div>
+        <div class="card-body">
+          <div class="month">Fourth Thursday of November</div>
+          <h3>Thanksgiving</h3>
+          <p>Kid-friendly recipes, table activities, travel tips, and keeping little ones entertained all day.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- WINTER -->
+  <div class="season winter">
+    <div class="season-label">Winter · Dec–Feb</div>
+    <div class="grid">
+      <a href="christmas.html" class="holiday-card c-christmas">
+        <div class="card-img"><img src="assets/christmas.jpg" alt="Family Christmas tree decorating"></div>
+        <div class="card-body">
+          <div class="month">December 25</div>
+          <h3>Christmas</h3>
+          <p>Gift safety, family traditions, age-appropriate activities, and surviving the holiday season with kids.</p>
+        </div>
+      </a>
+      <a href="new-years-eve.html" class="holiday-card c-nye">
+        <div class="card-img"><img src="assets/nye.jpg" alt="New Year's Eve celebration"></div>
+        <div class="card-body">
+          <div class="month">December 31</div>
+          <h3>New Year's Eve</h3>
+          <p>Family-friendly countdown ideas, kid-safe noise makers, and celebrating without staying up too late.</p>
+        </div>
+      </a>
+      <a href="super-bowl-sunday.html" class="holiday-card c-superbowl">
+        <div class="card-img"><img src="assets/superbowl.jpg" alt="Super Bowl party"></div>
+        <div class="card-body">
+          <div class="month">Early February</div>
+          <h3>Super Bowl Sunday</h3>
+          <p>Easy party foods, game-day activities for kids, and hosting a crowd without the stress.</p>
+        </div>
+      </a>
+      <a href="valentines-day.html" class="holiday-card c-valentine">
+        <div class="card-img"><img src="assets/valentines.jpg" alt="Valentine's Day crafts"></div>
+        <div class="card-body">
+          <div class="month">February 14</div>
+          <h3>Valentine's Day</h3>
+          <p>Family crafts, kid-friendly treats, simple date ideas, and classroom Valentine tips.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- SPRING -->
+  <div class="season spring">
+    <div class="season-label">Spring · Mar–Jun</div>
+    <div class="grid">
+      <a href="st-patricks-day.html" class="holiday-card c-stpat">
+        <div class="card-img"><img src="assets/stpatricks.jpg" alt="St. Patrick's Day celebration"></div>
+        <div class="card-body">
+          <div class="month">March 17</div>
+          <h3>St. Patrick's Day</h3>
+          <p>Green food ideas, easy crafts, leprechaun traps, and little-known facts kids will love.</p>
+        </div>
+      </a>
+      <a href="easter.html" class="holiday-card c-easter">
+        <div class="card-img"><img src="assets/easter.jpg" alt="Easter egg hunt with family"></div>
+        <div class="card-body">
+          <div class="month">Spring Sunday</div>
+          <h3>Easter</h3>
+          <p>Egg hunt tips, basket ideas, brunch recipes, and visiting the Easter bunny without the meltdown.</p>
+        </div>
+      </a>
+      <a href="mothers-day.html" class="holiday-card c-mothers">
+        <div class="card-img"><img src="assets/mothersday.jpg" alt="Mother's Day family breakfast"></div>
+        <div class="card-body">
+          <div class="month">Second Sunday of May</div>
+          <h3>Mother's Day</h3>
+          <p>Thoughtful gift ideas kids can make, brunch recipes, and activities mom will actually enjoy.</p>
+        </div>
+      </a>
+      <a href="memorial-day.html" class="holiday-card c-memorial">
+        <div class="card-img"><img src="assets/memorial-day.jpg" alt="Memorial Day backyard BBQ"></div>
+        <div class="card-body">
+          <div class="month">Last Monday of May</div>
+          <h3>Memorial Day</h3>
+          <p>BBQ menu, parade tips, travel planning, and explaining the meaning to kids without killing the fun.</p>
+        </div>
+      </a>
+      <a href="fathers-day.html" class="holiday-card c-fathers">
+        <div class="card-img"><img src="assets/fathersday.jpg" alt="Father's Day outdoor activity"></div>
+        <div class="card-body">
+          <div class="month">Third Sunday of June</div>
+          <h3>Father's Day</h3>
+          <p>DIY gifts, outdoor activities, dad-approved recipes, and celebrating the father figure in your life.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- SUMMER -->
+  <div class="season summer">
+    <div class="season-label">Summer · Jul–Sep</div>
+    <div class="grid">
+      <a href="fourth-of-july.html" class="holiday-card c-july4">
+        <div class="card-img"><img src="assets/july4.jpg" alt="Fourth of July BBQ"></div>
+        <div class="card-body">
+          <div class="month">July 4</div>
+          <h3>Fourth of July</h3>
+          <p>BBQ recipes, fireworks safety for kids, parade tips, and backyard games the whole family can play.</p>
+        </div>
+      </a>
+      <a href="labor-day.html" class="holiday-card c-laborday">
+        <div class="card-img"><img src="assets/labor-day.jpg" alt="Labor Day backyard party"></div>
+        <div class="card-body">
+          <div class="month">First Monday of September</div>
+          <h3>Labor Day</h3>
+          <p>End-of-summer BBQ, travel tips, bucket list activities, and back-to-school prep without the stress.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Planning a holiday? Start here.</h2>
+    <p>Every guide includes age-by-age advice, safety checklists, at-home activities, and answers to the questions you didn't know to ask.</p>
+  </div>
+
+  <footer>
+    <p>Year-Round Holidays — Making every celebration family-friendly.</p>
+    <p style="margin-top:8px;"><a href="about.html">About</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
