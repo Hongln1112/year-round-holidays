@@ -5,6 +5,9 @@
   <url><loc>https://year-round-holidays.vercel.app/thanksgiving.html</loc><priority>0.9</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/christmas.html</loc><priority>0.9</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/new-years-eve.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://year-round-holidays.vercel.app/new-years-day.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://year-round-holidays.vercel.app/mlk-day.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://year-round-holidays.vercel.app/back-to-school.html</loc><priority>0.9</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/super-bowl-sunday.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/valentines-day.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/st-patricks-day.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
@@ -14,6 +17,9 @@
   <url><loc>https://year-round-holidays.vercel.app/fathers-day.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/fourth-of-july.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/labor-day.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://year-round-holidays.vercel.app/cinco-de-mayo.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://year-round-holidays.vercel.app/juneteenth.html</loc><priority>0.8</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://year-round-holidays.vercel.app/black-friday.html</loc><priority>0.9</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/about.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/privacy.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
 </urlset>

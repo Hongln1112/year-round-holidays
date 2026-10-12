@@ -76,6 +76,27 @@
   .cta h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;margin-bottom:10px;}
   .cta p{font-size:15px;color:var(--muted);max-width:480px;margin:0 auto;}
 
+  /* Month nav */
+  .month-nav{margin:30px 0 10px;}
+  .month-nav-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-bottom:14px;text-align:center;}
+  .month-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;}
+  .month-cell{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s;}
+  .month-cell:hover{border-color:#C75B8A;transform:translateY(-2px);}
+  .month-cell .m{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:2px;}
+  .month-cell .h{font-size:11.5px;color:var(--muted);line-height:1.4;}
+  .month-cell.empty{background:transparent;border-style:dashed;}
+  .month-cell.empty .m{color:var(--muted);}
+  .month-cell.empty .h{display:none;}
+
+  /* FAQ */
+  .home-faq{margin-top:40px;padding-top:30px;border-top:1px solid var(--line);}
+  .home-faq h2{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;margin-bottom:6px;}
+  .home-faq .faq-sub{font-size:14px;color:var(--muted);margin-bottom:20px;}
+  .faq-item{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden;}
+  .faq-q{padding:16px 20px;font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-a-inner{padding:0 20px 16px;font-size:14px;color:#4a4440;line-height:1.7;}
+
   /* Footer */
   footer{padding:40px 0;text-align:center;border-top:1px solid var(--line);margin-top:40px;}
   footer p{font-size:13px;color:var(--muted);}
@@ -107,6 +128,25 @@
     <p>Every holiday, one place. Whether you're prepping for trick-or-treat or hosting the in-laws, we've got the practical guide that actually works.</p>
   </div>
 
+  <!-- Month quick nav -->
+  <div class="month-nav">
+    <div class="month-nav-title">Jump to a month</div>
+    <div class="month-grid">
+      <a class="month-cell" href="new-years-day.html"><div class="m">January</div><div class="h">New Year's Day · MLK Jr. Day</div></a>
+      <a class="month-cell" href="valentines-day.html"><div class="m">February</div><div class="h">Valentine's Day · Super Bowl</div></a>
+      <a class="month-cell" href="st-patricks-day.html"><div class="m">March</div><div class="h">St. Patrick's Day</div></a>
+      <a class="month-cell" href="easter.html"><div class="m">April</div><div class="h">Easter</div></a>
+      <a class="month-cell" href="mothers-day.html"><div class="m">May</div><div class="h">Mother's Day · Cinco de Mayo · Memorial Day</div></a>
+      <a class="month-cell" href="fathers-day.html"><div class="m">June</div><div class="h">Father's Day · Juneteenth</div></a>
+      <a class="month-cell" href="fourth-of-july.html"><div class="m">July</div><div class="h">Fourth of July</div></a>
+      <a class="month-cell" href="back-to-school.html"><div class="m">August</div><div class="h">Back to School</div></a>
+      <a class="month-cell" href="labor-day.html"><div class="m">September</div><div class="h">Labor Day</div></a>
+      <a class="month-cell" href="halloween.html"><div class="m">October</div><div class="h">Halloween</div></a>
+      <a class="month-cell" href="thanksgiving.html"><div class="m">November</div><div class="h">Thanksgiving · Black Friday</div></a>
+      <a class="month-cell" href="christmas.html"><div class="m">December</div><div class="h">Christmas · New Year's Eve</div></a>
+    </div>
+  </div>
+
   <!-- FALL -->
   <div class="season fall">
     <div class="season-label">Fall · Sep–Nov</div>
@@ -125,6 +165,14 @@
           <div class="month">Fourth Thursday of November</div>
           <h3>Thanksgiving</h3>
           <p>Kid-friendly recipes, table activities, travel tips, and keeping little ones entertained all day.</p>
+        </div>
+      </a>
+      <a href="black-friday.html" class="holiday-card c-blackfriday">
+        <div class="card-img"><img src="assets/black-friday.jpg" alt="Family unboxing gifts at home on Black Friday"></div>
+        <div class="card-body">
+          <div class="month" style="color:#B8741A;">Day After Thanksgiving</div>
+          <h3>Black Friday</h3>
+          <p>What's actually worth buying, budget tips, and how to skip the crowds without missing the deals.</p>
         </div>
       </a>
     </div>
@@ -148,6 +196,22 @@
           <div class="month">December 31</div>
           <h3>New Year's Eve</h3>
           <p>Family-friendly countdown ideas, kid-safe noise makers, and celebrating without staying up too late.</p>
+        </div>
+      </a>
+      <a href="new-years-day.html" class="holiday-card c-newyearsday">
+        <div class="card-img"><img src="assets/new-years-day.jpg" alt="Family making pancakes on New Year's Day morning"></div>
+        <div class="card-body">
+          <div class="month" style="color:#5B3A8C;">January 1</div>
+          <h3>New Year's Day</h3>
+          <p>Easy brunch, kid-friendly resolutions, and low-key activities to start the year together.</p>
+        </div>
+      </a>
+      <a href="mlk-day.html" class="holiday-card c-mlk">
+        <div class="card-img"><img src="assets/mlk-day.jpg" alt="Family reading books together on MLK Jr. Day"></div>
+        <div class="card-body">
+          <div class="month" style="color:#2C3E6B;">Third Monday of January</div>
+          <h3>MLK Jr. Day</h3>
+          <p>Age-appropriate history, kids' books, and family volunteering ideas to honor the day.</p>
         </div>
       </a>
       <a href="super-bowl-sunday.html" class="holiday-card c-superbowl">
@@ -205,12 +269,28 @@
           <p>BBQ menu, parade tips, travel planning, and explaining the meaning to kids without killing the fun.</p>
         </div>
       </a>
+      <a href="cinco-de-mayo.html" class="holiday-card c-cinco">
+        <div class="card-img"><img src="assets/cinco-de-mayo.jpg" alt="Mexican food spread for Cinco de Mayo family dinner"></div>
+        <div class="card-body">
+          <div class="month" style="color:#1E7A46;">May 5</div>
+          <h3>Cinco de Mayo</h3>
+          <p>At-home taco bar, kid-friendly Mexican food, crafts, and a gentle intro to the history.</p>
+        </div>
+      </a>
       <a href="fathers-day.html" class="holiday-card c-fathers">
         <div class="card-img"><img src="assets/fathersday.jpg" alt="Father's Day outdoor activity"></div>
         <div class="card-body">
           <div class="month">Third Sunday of June</div>
           <h3>Father's Day</h3>
           <p>DIY gifts, outdoor activities, dad-approved recipes, and celebrating the father figure in your life.</p>
+        </div>
+      </a>
+      <a href="juneteenth.html" class="holiday-card c-juneteenth">
+        <div class="card-img"><img src="assets/juneteenth.jpg" alt="Multi-generational family backyard gathering for Juneteenth"></div>
+        <div class="card-body">
+          <div class="month" style="color:#1E7A46;">June 19</div>
+          <h3>Juneteenth</h3>
+          <p>Age-appropriate history, books, food, and family activities for celebrating freedom together.</p>
         </div>
       </a>
     </div>
@@ -228,6 +308,14 @@
           <p>BBQ recipes, fireworks safety for kids, parade tips, and backyard games the whole family can play.</p>
         </div>
       </a>
+      <a href="back-to-school.html" class="holiday-card c-bts">
+        <div class="card-img"><img src="assets/back-to-school.jpg" alt="Child with backpack waiting for school bus"></div>
+        <div class="card-body">
+          <div class="month" style="color:#C0551E;">Late August</div>
+          <h3>Back to School</h3>
+          <p>Supplies, morning routines, first-day tips, and lunch ideas — survive the transition from summer to school.</p>
+        </div>
+      </a>
       <a href="labor-day.html" class="holiday-card c-laborday">
         <div class="card-img"><img src="assets/labor-day.jpg" alt="Labor Day backyard party"></div>
         <div class="card-body">
@@ -236,6 +324,37 @@
           <p>End-of-summer BBQ, travel tips, bucket list activities, and back-to-school prep without the stress.</p>
         </div>
       </a>
+    </div>
+  </div>
+
+  <!-- Home FAQ -->
+  <div class="home-faq">
+    <h2>Common holiday questions</h2>
+    <p class="faq-sub">Quick answers to the things people search for every year.</p>
+
+    <div class="faq-item">
+      <div class="faq-q">When is Mother's Day in 2026? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Mother's Day is always the second Sunday of May. In 2026, that's <strong>May 10, 2026</strong>.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">When is Father's Day in 2026? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Father's Day is always the third Sunday of June. In 2026, that's <strong>June 21, 2026</strong>.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is Juneteenth a federal holiday? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Yes. Juneteenth (June 19) became a federal holiday in 2021. Government offices and many employers close. Private companies vary.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is the most celebrated holiday in America? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Christmas is the most widely celebrated holiday in the U.S., followed by Thanksgiving and the Fourth of July.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is Cinco de Mayo Mexican Independence Day? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">No. Mexico's Independence Day is September 16. Cinco de Mayo commemorates the 1862 Battle of Puebla and is more widely celebrated in the U.S. than in most of Mexico.</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">When is Easter in 2026? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">In 2026, Easter Sunday falls on <strong>April 5</strong>. Easter is always on the first Sunday after the first full moon following the spring equinox.</div></div>
     </div>
   </div>
 
@@ -249,6 +368,17 @@
     <p style="margin-top:8px;"><a href="about.html">About</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
   </footer>
 </div>
+
+<script>
+document.querySelectorAll('.home-faq .faq-q').forEach(function(q){
+  q.addEventListener('click',function(){
+    var item=q.parentElement;
+    var a=item.querySelector('.faq-a');
+    if(item.classList.contains('open')){item.classList.remove('open');a.style.maxHeight=null;q.querySelector('span').textContent='+';}
+    else{item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';q.querySelector('span').textContent='−';}
+  });
+});
+</script>
 
 </body>
 </html>
