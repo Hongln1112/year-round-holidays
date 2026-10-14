@@ -22,4 +22,6 @@
   <url><loc>https://year-round-holidays.vercel.app/black-friday.html</loc><priority>0.9</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/about.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://year-round-holidays.vercel.app/privacy.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://year-round-holidays.vercel.app/contact.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://year-round-holidays.vercel.app/gift-guides.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
 </urlset>

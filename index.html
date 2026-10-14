@@ -11,9 +11,17 @@
   :root{
     --cream:#FFF8F0;--ink:#2D2A26;--muted:#7A6E62;--line:#EADFD3;--card:#FFFFFF;
     --radius:18px;--shadow:0 6px 24px rgba(45,42,38,.08);
+    --navy:#2D2A26;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;}
+  nav{background:var(--navy);position:sticky;top:0;z-index:100;}
+  .nav-inner{max-width:1140px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;}
+  .nav-brand{color:#FFF8F0;font-weight:700;font-size:15px;letter-spacing:-.2px;text-decoration:none;display:flex;align-items:center;gap:8px;font-family:'Playfair Display',Georgia,serif;}
+  .nav-brand svg{width:22px;height:22px;}
+  .nav-links{display:flex;gap:28px;}
+  .nav-links a{color:#B8A99A;text-decoration:none;font-size:14px;font-weight:500;transition:color .15s;}
+  .nav-links a:hover{color:#FFF8F0;}
   .wrap{max-width:960px;margin:0 auto;padding:0 20px;}
 
   /* Hero */
@@ -111,6 +119,20 @@
 </style>
 </head>
 <body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18M5 6h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
+      Year-Round Holidays
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Holidays</a>
+      <a href="gift-guides.html">Gift Guides</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</nav>
 
 <div class="hero">
   <img src="assets/home-hero.jpg" alt="Warm family home living room decorated for holidays with string lights and festive decor">
