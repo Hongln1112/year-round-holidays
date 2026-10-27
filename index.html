@@ -355,12 +355,12 @@
     <p class="faq-sub">Quick answers to the things people search for every year.</p>
 
     <div class="faq-item">
-      <div class="faq-q">When is Mother's Day in 2026? <span>+</span></div>
-      <div class="faq-a"><div class="faq-a-inner">Mother's Day is always the second Sunday of May. In 2026, that's <strong>May 10, 2026</strong>.</div></div>
+      <div class="faq-q">When is Mother's Day in <span class="faq-year">2026</span>? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Mother's Day is always the second Sunday of May. In <span class="faq-year">2026</span>, that's <strong id="mothers-day-date"></strong>.</div></div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">When is Father's Day in 2026? <span>+</span></div>
-      <div class="faq-a"><div class="faq-a-inner">Father's Day is always the third Sunday of June. In 2026, that's <strong>June 21, 2026</strong>.</div></div>
+      <div class="faq-q">When is Father's Day in <span class="faq-year">2026</span>? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">Father's Day is always the third Sunday of June. In <span class="faq-year">2026</span>, that's <strong id="fathers-day-date"></strong>.</div></div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Is Juneteenth a federal holiday? <span>+</span></div>
@@ -375,8 +375,8 @@
       <div class="faq-a"><div class="faq-a-inner">No. Mexico's Independence Day is September 16. Cinco de Mayo commemorates the 1862 Battle of Puebla and is more widely celebrated in the U.S. than in most of Mexico.</div></div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">When is Easter in 2026? <span>+</span></div>
-      <div class="faq-a"><div class="faq-a-inner">In 2026, Easter Sunday falls on <strong>April 5</strong>. Easter is always on the first Sunday after the first full moon following the spring equinox.</div></div>
+      <div class="faq-q">When is Easter in <span class="faq-year">2026</span>? <span>+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">In <span class="faq-year">2026</span>, Easter Sunday falls on <strong id="easter-date"></strong>. Easter is always on the first Sunday after the first full moon following the spring equinox.</div></div>
     </div>
   </div>
 
@@ -400,6 +400,33 @@ document.querySelectorAll('.home-faq .faq-q').forEach(function(q){
     else{item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';q.querySelector('span').textContent='−';}
   });
 });
+</script>
+
+
+<script>
+(function(){
+  var y = new Date().getFullYear();
+  function nth(y,m,n,dow){
+    var first=new Date(y,m-1,1);
+    var off=(dow-first.getDay()+7)%7;
+    return off+1+(n-1)*7;
+  }
+  function easter(y){
+    var a=y%19,b=(y/100)|0,c=y%100,d=(b/4)|0,e=b%4,f=((b+8)/25)|0,g=((b-f+1)/3)|0;
+    var h=(19*a+b-d-g+15)%30,i=(c/4)|0,k=c%4,l=(32+2*e+2*i-h-k)%7;
+    var m=((a+11*h+22*l)/451)|0;
+    var mo=((h+l-7*m+114)/31)|0, day=(h+l-7*m+114)%31+1;
+    return {m:mo,d:day};
+  }
+  var names=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  function fmt(m,d){return names[m-1]+" "+d+", "+y;}
+  var mothers=nth(y,5,2,0), fathers=nth(y,6,3,0), east=easter(y);
+  document.getElementById("mothers-day-date").textContent=fmt(mothers.m,mothers.d);
+  document.getElementById("fathers-day-date").textContent=fmt(fathers.m,fathers.d);
+  document.getElementById("easter-date").textContent=fmt(east.m,east.d);
+  var ys=document.querySelectorAll(".faq-year");
+  for(var i=0;i<ys.length;i++) ys[i].textContent=y;
+})();
 </script>
 
 </body>
