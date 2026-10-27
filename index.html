@@ -421,8 +421,8 @@ document.querySelectorAll('.home-faq .faq-q').forEach(function(q){
   var names=["January","February","March","April","May","June","July","August","September","October","November","December"];
   function fmt(m,d){return names[m-1]+" "+d+", "+y;}
   var mothers=nth(y,5,2,0), fathers=nth(y,6,3,0), east=easter(y);
-  document.getElementById("mothers-day-date").textContent=fmt(mothers.m,mothers.d);
-  document.getElementById("fathers-day-date").textContent=fmt(fathers.m,fathers.d);
+  document.getElementById("mothers-day-date").textContent=fmt(5,mothers);
+  document.getElementById("fathers-day-date").textContent=fmt(6,fathers);
   document.getElementById("easter-date").textContent=fmt(east.m,east.d);
   var ys=document.querySelectorAll(".faq-year");
   for(var i=0;i<ys.length;i++) ys[i].textContent=y;
